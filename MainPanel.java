@@ -17,18 +17,32 @@ public class MainPanel{
      */
     public static void main(String[] args){
 
-        SolarSystem solarSystem = new SolarSystem(500, 500);
+        SolarSystem solarSystem = new SolarSystem(1920, 1080);
+        solarSystem.speedFrame = 10;
         Sun sun = new Sun();
         Earth earth = new Earth();
         Moon moon = new Moon();
         Mars mars = new Mars();
+        Mercury mercury = new Mercury();
+        Venus venus = new Venus();
+        Saturn saturn = new Saturn();
+        Uranus uranus = new Uranus();
+        Neptune neptune = new Neptune();
+        Jupiter jupiter = new Jupiter();
 
         while(true){
 
-            solarSystem.drawSolarObject(sun.getDistance(), sun.getAngle(), sun.getDiameter(), sun.getCol());
-            solarSystem.drawSolarObject(earth.getDistance(), earth.getAngle(), earth.getDiameter(), earth.getCol());
-            solarSystem.drawSolarObjectAbout(moon.getDistance(), moon.getAngle(), moon.getDiameter(), moon.getCol(), moon.getCentreOfRotationDistance(), moon.getCentreOfRotationAngle());
-            solarSystem.drawSolarObject(mars.getDistance(), mars.getAngle(), mars.getDiameter(), mars.getCol());
+            solarSystem.drawSolarObject(sun.getDistance(), sun.getAngle(), sun.getDiameter(), sun.getColour());
+            solarSystem.drawSolarObject(earth.getDistance(), earth.updatedAngleWithAngularSpeed(), earth.getDiameter(), earth.getColour());
+            solarSystem.drawSolarObjectAbout(moon.updatedDistanceWithSpeed(), moon.updatedAngleWithAngularSpeed(), moon.getDiameter(), moon.getColour(), moon.getCentreOfRotationDistance(), moon.getCentreOfRotationAngle());
+            solarSystem.drawSolarObject(mars.getDistance(), mars.updatedAngleWithAngularSpeed(), mars.getDiameter(), mars.getColour());
+            solarSystem.drawSolarObject(mercury.getDistance(), mercury.updatedAngleWithAngularSpeed(), mercury.getDiameter(), mercury.getColour());
+            solarSystem.drawSolarObject(venus.getDistance(), venus.updatedAngleWithAngularSpeed(), venus.getDiameter(), venus.getColour());
+            solarSystem.drawSolarObject(saturn.getDistance(), saturn.updatedAngleWithAngularSpeed(), saturn.getDiameter(), saturn.getColour());
+            solarSystem.drawSolarObject(uranus.getDistance(), uranus.updatedAngleWithAngularSpeed(), uranus.getDiameter(), uranus.getColour());
+            solarSystem.drawSolarObject(neptune.getDistance(), neptune.updatedAngleWithAngularSpeed(), neptune.getDiameter(), neptune.getColour());
+            solarSystem.drawSolarObject(jupiter.getDistance(), jupiter.updatedAngleWithAngularSpeed(), jupiter.getDiameter(), jupiter.getColour());
+
             solarSystem.finishedDrawing();
 
         }

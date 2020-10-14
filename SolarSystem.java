@@ -17,6 +17,8 @@ public class SolarSystem extends JFrame
 
 	private ArrayList<SolarObject> things = new ArrayList<SolarObject>();
 
+	public int speedFrame = 20;
+
 	/**
 	 * Create a view of the Solar System.
 	 * Once an instance of the SolarSystem class is created,
@@ -217,7 +219,7 @@ public class SolarSystem extends JFrame
 		try
 		{
 			this.repaint();
-			Thread.sleep(20);
+			Thread.sleep(speedFrame);
 			synchronized (this)
 			{
 				things.clear();
