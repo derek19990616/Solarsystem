@@ -34,7 +34,7 @@ public class MainPanel{
 
             solarSystem.drawSolarObject(sun.getDistance(), sun.getAngle(), sun.getDiameter(), sun.getColour());
             solarSystem.drawSolarObject(earth.getDistance(), earth.updatedAngleWithAngularSpeed(), earth.getDiameter(), earth.getColour());
-            solarSystem.drawSolarObjectAbout(moon.updatedDistanceWithSpeed(), moon.updatedAngleWithAngularSpeed(), moon.getDiameter(), moon.getColour(), moon.getCentreOfRotationDistance(), moon.getCentreOfRotationAngle());
+            solarSystem.drawSolarObjectAbout(moon.getDistance(), moon.getAngle(), moon.getDiameter(), moon.getColour(), moon.getCentreOfRotationDistance(), moon.getCentreOfRotationAngle());
             solarSystem.drawSolarObject(mars.getDistance(), mars.updatedAngleWithAngularSpeed(), mars.getDiameter(), mars.getColour());
             solarSystem.drawSolarObject(mercury.getDistance(), mercury.updatedAngleWithAngularSpeed(), mercury.getDiameter(), mercury.getColour());
             solarSystem.drawSolarObject(venus.getDistance(), venus.updatedAngleWithAngularSpeed(), venus.getDiameter(), venus.getColour());

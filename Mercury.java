@@ -3,6 +3,7 @@
  * @author Haochen Pan
  */
 public class Mercury extends Planets{
+   
     
    
 
@@ -21,7 +22,9 @@ public class Mercury extends Planets{
         super.setAngle(2);
         return super.getAngle();
     
-}
+}   
+    
+    
 }
     
    
