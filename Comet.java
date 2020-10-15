@@ -25,7 +25,7 @@ public class Comet extends Planets{
      */
     public double updatedCentreOfRotationDistance(){
 
-        if(super.getCentreOfRotationDistance() <= 20){
+        if(super.getCentreOfRotationDistance() <= 10){
             super.updateCentreOfRotationDistance(5);
 
         }
