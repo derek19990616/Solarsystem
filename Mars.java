@@ -14,15 +14,11 @@ public class Mars extends Planets{
         super.setDiameter(10);
         super.setColour("RED");
         super.setAngle(0);
+        super.setSpeed(1.2);
 
     }
+}
 
-    public double updatedAngleWithAngularSpeed(){
-        super.setAngle(1.2);
-        return super.getAngle();
-    
-}
-}
     
    
    

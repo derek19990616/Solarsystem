@@ -17,7 +17,7 @@ public class SolarSystem extends JFrame
 
 	private ArrayList<SolarObject> things = new ArrayList<SolarObject>();
 
-	public int speedFrame = 20;
+	public int speedFrame = 20; //speed control(added var)
 
 	/**
 	 * Create a view of the Solar System.

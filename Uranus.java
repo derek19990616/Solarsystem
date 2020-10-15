@@ -1,5 +1,5 @@
 /**
- * This class contains the details of the Mars in the solar system
+ * This class contains the details of the Uranus in the solar system
  * @author Haochen Pan
  */
 public class Uranus extends Planets{
@@ -7,21 +7,16 @@ public class Uranus extends Planets{
    
 
     /**
-     * This enables user to retrieve the details of the Mars
+     * This enables user to retrieve the details of the Uranus
      */
     public Uranus(){
         super.setDistance(450);
         super.setDiameter(9);
         super.setColour("White");
         super.setAngle(0);
+        super.setSpeed(0.5);
 
     }
-
-    public double updatedAngleWithAngularSpeed(){
-        super.setAngle(0.5);
-        return super.getAngle();
-    
-}
 }
     
    
