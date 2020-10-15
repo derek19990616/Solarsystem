@@ -167,6 +167,15 @@ public abstract class Planets{
     }
     
     /**
+     * A method used to get the updated distance between the moon and the planet
+     * @return angle the updated rotation distance
+     */
+    public double updatedCentreOfRotationDistance(){
+        updateCentreOfRotationDistance(0);
+        return getCentreOfRotationDistance();
+
+    }
+    /**
      * A method used to get the rotation distance between the moon and the planet
      * @return centreOfRotationSpeed the rotation distance
      */

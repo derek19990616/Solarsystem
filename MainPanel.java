@@ -28,6 +28,7 @@ public class MainPanel{
         Uranus uranus = new Uranus();
         Neptune neptune = new Neptune();
         Jupiter jupiter = new Jupiter();
+        Comet comet = new Comet();
         Asteroids asteroids = new Asteroids(); //Contains all the invididual asteroids' data
       
         
@@ -43,7 +44,7 @@ public class MainPanel{
             solarSystem.drawSolarObject(uranus.getDistance(), uranus.updatedAngleWithAngularSpeed(), uranus.getDiameter(), uranus.getColour());
             solarSystem.drawSolarObject(neptune.getDistance(), neptune.updatedAngleWithAngularSpeed(), neptune.getDiameter(), neptune.getColour());
             solarSystem.drawSolarObject(jupiter.getDistance(), jupiter.updatedAngleWithAngularSpeed(), jupiter.getDiameter(), jupiter.getColour());
-            
+            solarSystem.drawSolarObjectAbout(comet.getDistance(), comet.updatedAngleWithAngularSpeed(), comet.getDiameter(), comet.getColour(), comet.updatedCentreOfRotationDistance(), comet.updatedCentreOfRotationAngle());
             /**
              * The following part is the individual asteroid
              */

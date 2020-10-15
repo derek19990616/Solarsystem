@@ -17,7 +17,7 @@ Asteroid.java
 Asteroids.java
 MainPanel.java
 SolarSystem.java
-
+Comet.java
 
 ### Usage
 

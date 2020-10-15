@@ -12,7 +12,7 @@ public class Mercury extends Planets{
      */
     public Mercury(){
         super.setDistance(70);
-        super.setDiameter(6);
+        super.setDiameter(8);
         super.setColour("GRAY");
         super.setAngle(0);
         super.setSpeed(2);
